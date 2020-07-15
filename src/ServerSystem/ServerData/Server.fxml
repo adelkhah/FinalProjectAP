@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.ServerData.Server">
+   <children>
+      <Button fx:id="button" layoutX="350.0" layoutY="176.0" mnemonicParsing="false" onAction="#sign_up_student" prefHeight="29.0" prefWidth="124.0" text="sign up as stdent" textFill="#1fb229" />
+      <Label layoutX="208.0" layoutY="45.0" prefHeight="62.0" prefWidth="185.0" text="Welcome" textFill="#e512e5">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Button layoutX="115.0" layoutY="176.0" mnemonicParsing="false" onAction="#sign_up_teacher" prefHeight="29.0" prefWidth="124.0" text="sign up as teacher" textFill="#1fb62c" />
+      <Button layoutX="350.0" layoutY="257.0" mnemonicParsing="false" onAction="#login_student" prefHeight="29.0" prefWidth="124.0" text="login as student" textFill="#4d19bd" />
+      <Button layoutX="115.0" layoutY="257.0" mnemonicParsing="false" onAction="#login_teacher" prefHeight="29.0" prefWidth="124.0" text="login as teeacher" textFill="#43199e" />
+      <Label layoutX="381.0" layoutY="123.0" text="Students" textFill="#b81f23">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="123.0" text="Teachers" textFill="#c22929">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

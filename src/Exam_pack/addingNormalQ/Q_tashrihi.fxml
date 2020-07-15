@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.addingNormalQ.Q_tashrihi">
+   <children>
+      <Button layoutX="257.0" layoutY="316.0" mnemonicParsing="false" onAction="#add" text="add question" textFill="#1ba711" />
+      <TextArea fx:id="textArea" layoutX="85.0" layoutY="67.0" prefHeight="200.0" prefWidth="482.0" promptText="write the question statement . . ." />
+      <Label layoutX="426.0" layoutY="14.0" text="Question">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="104.0" layoutY="25.0" promptText="points for this question" />
+      <Label layoutX="46.0" layoutY="29.0" text="point : " />
+   </children>
+</AnchorPane>

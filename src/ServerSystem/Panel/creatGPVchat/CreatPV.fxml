@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.Panel.creatGPVchat.CreatPV">
+   <children>
+      <Button layoutX="258.0" layoutY="221.0" mnemonicParsing="false" onAction="#pv_chat" text="start PV chat" textFill="#256dd1" />
+      <TextField fx:id="username" layoutX="226.0" layoutY="141.0" promptText="username" />
+      <Label layoutX="141.0" layoutY="67.0" text="student or teacher username" textFill="#ad2286">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
