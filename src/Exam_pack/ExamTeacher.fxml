@@ -34,6 +34,6 @@
         </items>
       </MenuButton>
       <Label layoutX="242.0" layoutY="87.0" text="also see their answers" />
-      <Button layoutX="264.0" layoutY="319.0" mnemonicParsing="false" onAction="#draw_chart" text="draw chart" />
+      <Button layoutX="217.0" layoutY="329.0" mnemonicParsing="false" onAction="#draw_chart" text="draw chart and creat xlsx file" />
    </children>
 </AnchorPane>

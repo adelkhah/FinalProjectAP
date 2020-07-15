@@ -199,5 +199,8 @@ public class TeacherPanelScreen {
             jFrame.setVisible(false);
         });
     }
+    public void exam_chart(){
+
+    }
 
 }

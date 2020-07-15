@@ -194,4 +194,7 @@ public class StudentPanelScreen {
             jFrame.setVisible(false);
         });
     }
+    public void exam_chart(){
+
+    }
 }
