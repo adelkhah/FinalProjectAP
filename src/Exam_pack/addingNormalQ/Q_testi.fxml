@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.addingNormalQ.Q_testi">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DDA0DD;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.addingNormalQ.Q_testi">
    <children>
-      <Button layoutX="239.0" layoutY="320.0" mnemonicParsing="false" onAction="#add" text="add question" textFill="#14cf30" />
+      <Button layoutX="239.0" layoutY="320.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #FFDAB9;" text="add question" textFill="#14cf30" />
       <TextArea fx:id="textArea" layoutX="226.0" layoutY="61.0" prefHeight="205.0" prefWidth="344.0" promptText="write the question statement . . ." />
       <TextField fx:id="a1" layoutX="60.0" layoutY="61.0" promptText="first option" />
       <TextField fx:id="a2" layoutX="60.0" layoutY="115.0" promptText="second option" />
@@ -22,7 +22,10 @@
             <Font size="27.0" />
          </font>
       </Label>
-      <Label layoutX="127.0" layoutY="25.0" text="points :" />
+      <Label layoutX="134.0" layoutY="21.0" text="points :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
       <CheckBox fx:id="a" layoutX="26.0" layoutY="65.0" mnemonicParsing="false" text="a" />
       <CheckBox fx:id="b" layoutX="25.0" layoutY="119.0" mnemonicParsing="false" text="b" />
       <CheckBox fx:id="c" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" text="c" />

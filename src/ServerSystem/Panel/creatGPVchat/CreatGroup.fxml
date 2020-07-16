@@ -4,15 +4,25 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.Panel.creatGPVchat.CreatGroup">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0E68C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.Panel.creatGPVchat.CreatGroup">
    <children>
-      <Button layoutX="183.0" layoutY="256.0" mnemonicParsing="false" onAction="#creat_group" text="create group" textFill="#4425bf" />
-      <Button layoutX="317.0" layoutY="256.0" mnemonicParsing="false" onAction="#add_memeber" text="add member" textFill="#ad9c28" />
+      <Button layoutX="183.0" layoutY="256.0" mnemonicParsing="false" onAction="#creat_group" style="-fx-background-color: #FF00FF;" text="create group" />
+      <Button layoutX="317.0" layoutY="256.0" mnemonicParsing="false" onAction="#add_memeber" style="-fx-background-color: #FF00FF;" text="add member" />
       <TextField fx:id="username" layoutX="224.0" layoutY="174.0" promptText="username" />
-      <Label layoutX="253.0" layoutY="145.0" text="adding memeber" textFill="#a62e9c" />
+      <Label layoutX="253.0" layoutY="145.0" text="adding memeber" textFill="#a62e9c">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
       <TextField fx:id="name" layoutX="225.0" layoutY="52.0" promptText="group name" />
-      <Label layoutX="266.0" layoutY="24.0" text="group name" textFill="#932183" />
-      <Label fx:id="result" layoutX="252.0" layoutY="221.0" text="result" textFill="#2ab636" />
+      <Label layoutX="266.0" layoutY="24.0" text="group name" textFill="#932183">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="result" layoutX="252.0" layoutY="221.0" text="result" textFill="#14711a">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
    </children>
 </AnchorPane>

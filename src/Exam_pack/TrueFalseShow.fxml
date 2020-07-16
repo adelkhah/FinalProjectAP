@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.TrueFalseShow">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAFAD2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.TrueFalseShow">
     <children>
-        <MenuButton fx:id="question" layoutX="67.0" layoutY="52.0" mnemonicParsing="false" text="Questions">
+        <MenuButton fx:id="question" layoutX="67.0" layoutY="52.0" mnemonicParsing="false" style="-fx-background-color: #E0FFFF;" text="Questions">
             <items>
                 <MenuItem mnemonicParsing="false" text="Action 1" />
                 <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -20,6 +20,19 @@
             </font>
         </Label>
       <Label fx:id="point" layoutX="171.0" layoutY="21.0" text="Label" />
-      <Label fx:id="textArea" layoutX="272.0" layoutY="77.0" text="Label" />
+      <Label fx:id="textArea" layoutX="272.0" layoutY="77.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="179.0" layoutY="140.0" text="True">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="192.0" text="False">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

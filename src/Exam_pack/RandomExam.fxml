@@ -6,35 +6,56 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.RandomExam">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5DEB3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.RandomExam">
     <children>
-        <Button layoutX="380.0" layoutY="343.0" mnemonicParsing="false" onAction="#submit" text="submit" textFill="#410dc6" />
+        <Button layoutX="380.0" layoutY="343.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: #4682B4;" text="submit" textFill="#2de385">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
         <TextArea fx:id="textArea" layoutX="289.0" layoutY="49.0" prefHeight="79.0" prefWidth="277.0" promptText="write your solution . . ." />
         <Label layoutX="441.0" layoutY="14.0" text="your solution" textFill="#4f14d8">
             <font>
                 <Font size="21.0" />
             </font>
         </Label>
-        <Hyperlink layoutX="441.0" layoutY="289.0" onAction="#addpic" text="add a picture" />
-        <Button layoutX="292.0" layoutY="343.0" mnemonicParsing="false" onAction="#finish" text="finish" textFill="#2dcf22" />
-        <Hyperlink layoutX="328.0" layoutY="289.0" onAction="#showpic" text="show my picture" />
-        <Label fx:id="start_time" layoutX="61.0" layoutY="303.0" text="Label" />
+        <Hyperlink layoutX="441.0" layoutY="289.0" onAction="#addpic" text="add a picture">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+        <Button layoutX="292.0" layoutY="343.0" mnemonicParsing="false" onAction="#finish" style="-fx-background-color: #4682B4;" text="finish" textFill="#e6f0f0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Hyperlink layoutX="281.0" layoutY="290.0" onAction="#showpic" text="show my picture">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+        <Label fx:id="start_time" layoutX="21.0" layoutY="323.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
         <Label fx:id="question_statement" layoutX="21.0" layoutY="59.0" text="qstatment" textFill="#3118d6">
             <font>
                 <Font size="14.0" />
             </font></Label>
-        <Label fx:id="point" layoutX="114.0" layoutY="21.0" text="point" />
+        <Label fx:id="point" layoutX="84.0" layoutY="21.0" text="point">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
         <CheckBox fx:id="t" layoutX="301.0" layoutY="148.0" mnemonicParsing="false" text="True" />
         <CheckBox fx:id="a1" layoutX="406.0" layoutY="148.0" mnemonicParsing="false" text="CheckBox" />
-        <CheckBox fx:id="a2" layoutX="407.0" layoutY="192.0" mnemonicParsing="false" text="CheckBox" />
-        <CheckBox fx:id="a3" layoutX="407.0" layoutY="228.0" mnemonicParsing="false" text="CheckBox" />
-        <CheckBox fx:id="a4" layoutX="407.0" layoutY="262.0" mnemonicParsing="false" text="CheckBox" />
+        <CheckBox fx:id="a2" layoutX="407.0" layoutY="184.0" mnemonicParsing="false" text="CheckBox" />
+        <CheckBox fx:id="a3" layoutX="407.0" layoutY="215.0" mnemonicParsing="false" text="CheckBox" />
+        <CheckBox fx:id="a4" layoutX="407.0" layoutY="247.0" mnemonicParsing="false" text="CheckBox" />
         <CheckBox fx:id="f" layoutX="300.0" layoutY="184.0" mnemonicParsing="false" text="False" />
-        <Label fx:id="type" layoutX="267.0" layoutY="12.0" text="noe soal" textFill="#ca2020">
+        <Label fx:id="type" layoutX="242.0" layoutY="12.0" text="noe soal" textFill="#ca2020">
             <font>
                 <Font size="25.0" />
             </font></Label>
+      <Line endX="136.3333282470703" endY="-3.814697265625E-6" layoutX="101.0" layoutY="49.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="137.0" layoutY="50.0" startX="100.00001525878906" startY="253.33331298828125" />
     </children>
 </AnchorPane>

@@ -10,14 +10,14 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.ShowAnsTeacher">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BDB76B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.ShowAnsTeacher">
    <children>
-      <Button layoutX="345.0" layoutY="338.0" mnemonicParsing="false" onAction="#setpoint" text="set answer point" textFill="#441ec4" />
+      <Button layoutX="345.0" layoutY="338.0" mnemonicParsing="false" onAction="#setpoint" style="-fx-background-color: #1E90FF;" text="set answer point" textFill="#201264" />
       <Label fx:id="solution" layoutX="204.0" layoutY="151.0" text="answer statement">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label layoutX="471.0" layoutY="146.0" text="solution" textFill="#53e31f">
+      <Label layoutX="471.0" layoutY="146.0" text="solution" textFill="#409321">
          <font>
             <Font size="25.0" />
          </font>
@@ -27,7 +27,7 @@
             <Font size="16.0" />
          </font></Hyperlink>
       <TextField fx:id="textField" layoutX="229.0" layoutY="280.0" promptText="points for the answer" />
-      <MenuButton fx:id="menuButton" layoutX="39.0" layoutY="32.0" mnemonicParsing="false" text="Answers">
+      <MenuButton fx:id="menuButton" layoutX="39.0" layoutY="32.0" mnemonicParsing="false" style="-fx-background-color: #9400D3;" text="Answers" textFill="#d8e7ea">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />

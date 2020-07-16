@@ -11,11 +11,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat_pack.GroupChatShow">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #800080;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat_pack.GroupChatShow">
    <left>
       <ScrollPane BorderPane.alignment="CENTER">
          <content>
-            <VBox fx:id="member" prefHeight="266.0" prefWidth="170.0" />
+            <VBox fx:id="member" prefHeight="266.0" prefWidth="170.0" style="-fx-background-color: #DDA0DD;" />
          </content>
       </ScrollPane>
    </left>
@@ -23,26 +23,29 @@
       <AnchorPane prefHeight="80.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <TextArea fx:id="message" layoutX="184.0" layoutY="21.0" prefHeight="89.0" prefWidth="251.0" promptText="type your message ..." />
-            <Button layoutX="436.0" layoutY="21.0" mnemonicParsing="false" onAction="#send" text="send" textFill="#25c13a" />
-            <Button layoutX="436.0" layoutY="53.0" mnemonicParsing="false" onAction="#edit" text="edit" textFill="#4624d1" />
-            <Button layoutX="436.0" layoutY="82.0" mnemonicParsing="false" onAction="#delete" text="delete" textFill="#cd2727" />
+            <Button layoutX="436.0" layoutY="21.0" mnemonicParsing="false" onAction="#send" style="-fx-background-color: #00CED1;" text="send" textFill="#0e781c" />
+            <Button layoutX="436.0" layoutY="53.0" mnemonicParsing="false" onAction="#edit" style="-fx-background-color: #00CED1;" text="edit" textFill="#4624d1" />
+            <Button layoutX="436.0" layoutY="82.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #00CED1;" text="delete" textFill="#cd2727" />
             <TextField fx:id="number" layoutX="485.0" layoutY="42.0" prefHeight="25.0" prefWidth="87.0" promptText="number" />
-            <Button layoutX="60.0" layoutY="41.0" mnemonicParsing="false" onAction="#refresh" text="refresh and save" textFill="#ab269c" />
+            <Button layoutX="60.0" layoutY="41.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #00CED1;" text="refresh and save" textFill="#ab269c" />
          </children>
       </AnchorPane>
    </bottom>
    <center>
       <ScrollPane BorderPane.alignment="CENTER">
          <content>
-            <TextFlow fx:id="chatpm" prefHeight="243.0" prefWidth="327.0" />
+            <TextFlow fx:id="chatpm" prefHeight="243.0" prefWidth="415.0" style="-fx-background-color: #FFEFD5;" />
          </content>
       </ScrollPane>
    </center>
    <top>
       <AnchorPane prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="title" layoutX="247.0" layoutY="13.0" text="group felan sakhte shiode tavasote felan" textFill="#178a99" />
-            <Label layoutX="14.0" layoutY="7.0" text="Members" textFill="#2890c8">
+            <Label fx:id="title" layoutX="247.0" layoutY="13.0" text="group felan sakhte shiode tavasote felan" textFill="#29cadc">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="7.0" text="Members" textFill="#5fb1da">
                <font>
                   <Font size="20.0" />
                </font>

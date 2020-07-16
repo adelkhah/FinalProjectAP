@@ -3,7 +3,6 @@ package Exam_pack;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 public class TestiShow {

@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.signup_login.LoginTeacher">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EEE8AA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.signup_login.LoginTeacher">
    <children>
-      <Button layoutX="273.0" layoutY="262.0" mnemonicParsing="false" onAction="#login" text="login" textFill="#21bb3d" />
+      <Button layoutX="273.0" layoutY="262.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #AFEEEE;" text="login" textFill="#21bb3d" />
       <TextField fx:id="username" layoutX="221.0" layoutY="150.0" promptText="username" />
       <PasswordField fx:id="password" layoutX="221.0" layoutY="200.0" promptText="password" />
       <Label alignment="CENTER" layoutX="194.0" layoutY="50.0" prefHeight="59.0" prefWidth="211.0" text="login as teacher" textFill="#d4139f">
