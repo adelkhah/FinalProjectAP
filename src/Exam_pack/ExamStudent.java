@@ -74,6 +74,7 @@ public class ExamStudent {
         }
         Question q = exam.getQuestions(index);
         if(exam.getQuestions(index) instanceof Test_Question){
+            answer.setPoints(0);
             if(a1.isSelected()){
                 answer.setSolution(a1.getText());
             }
@@ -91,6 +92,7 @@ public class ExamStudent {
             }
         }
         if(exam.getQuestions(index) instanceof TrueFalse_Question){
+            answer.setPoints(0);
             if(t.isSelected()){
                 answer.setSolution(t.getText());
             }

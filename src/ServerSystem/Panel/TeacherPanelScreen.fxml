@@ -62,6 +62,7 @@
       </MenuButton>
       <Button layoutX="95.0" layoutY="209.0" mnemonicParsing="false" onAction="#refresh" text="refresh and save" textFill="#19cd13" />
       <Label fx:id="lesson" layoutX="195.0" layoutY="147.0" text="Lessons : " />
-      <Hyperlink layoutX="300.0" layoutY="177.0" onAction="#exam_chart" text="see your exam charts" />
+      <Hyperlink layoutX="264.0" layoutY="176.0" onAction="#exam_chart" text="see your exam charts" />
+      <Hyperlink layoutX="428.0" layoutY="176.0" onAction="#exam_xlsx" text="create exam xlsx" />
     </children>
 </AnchorPane>

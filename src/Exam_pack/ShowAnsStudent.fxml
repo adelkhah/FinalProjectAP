@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
@@ -43,5 +44,7 @@
          </font>
       </Label>
       <Line endX="100.0" layoutX="485.0" layoutY="149.0" startX="-344.33331298828125" startY="1.52587890625E-5" />
+      <Button layoutX="321.0" layoutY="347.0" mnemonicParsing="false" onAction="#see_chart" text="see charts for this exam" />
+      <Button layoutX="140.0" layoutY="347.0" mnemonicParsing="false" onAction="#exam_xlsx" text="create xlsx of the exam" />
    </children>
 </AnchorPane>

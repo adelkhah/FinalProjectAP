@@ -6,11 +6,17 @@ import Exam_pack.Exam;
 import Person_pack.Teacher;
 import ServerSystem.Panel.creatGPVchat.CreatGroup;
 import ServerSystem.Panel.creatGPVchat.CreatPV;
+import ServerSystem.ServerData.DataSaver;
 import ServerSystem.ServerData.Server;
 import ServerSystem.ServerData.Updater;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
@@ -18,9 +24,18 @@ import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 import lesson_pack.CreatLesson;
 import lesson_pack.Lesson;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import javax.swing.*;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 public class TeacherPanelScreen {
     TeacherPanel  tp;
@@ -201,6 +216,112 @@ public class TeacherPanelScreen {
     }
     public void exam_chart(){
 
+        Stage primaryStage = new Stage();
+        CategoryAxis xaxis= new CategoryAxis();
+        NumberAxis yaxis = new NumberAxis();
+        xaxis.setLabel("exam");
+        yaxis.setLabel("average");
+        BarChart<String,Float> bar = new BarChart(xaxis,yaxis);
+        bar.setTitle("exam average");
+        XYChart.Series<String,Float> series = new XYChart.Series<>();
+
+
+        for(int k = 0; k < tp.getExam_cnt(); k++){
+            Exam e = tp.getMyExams(k);
+            String name = e.getName();
+            double sum = 0;
+
+            for(int i = 0; i < e.getS_cnt(); i++){
+
+                String studentID = e.getStudents(i).getStudentID();
+                int nomre = 0;
+                for(int j = 0; j < e.getQ_cnt(); j++){
+
+                    StudentPanel sp = DataSaver.findSP_byID(studentID);
+                    int exam_number = sp.findExam(e);
+                    if(sp.getMyAnswer(exam_number,j) == null){
+                        continue;
+                    }
+                    int p = sp.getMyAnswer(exam_number,j).getPoints();
+                    nomre += (p == -1 ? 0 : p);
+                }
+                sum += nomre;
+            }
+            sum = sum/e.getS_cnt();
+            series.getData().add(new XYChart.Data(name,sum));
+        }
+
+        bar.getData().add(series);
+        Group root = new Group();
+        root.getChildren().add(bar);
+        Scene scene = new Scene(root,800,600);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("BarChart");
+        primaryStage.show();
+    }
+    public void exam_xlsx(){
+        XSSFWorkbook workbook = new XSSFWorkbook();
+
+        // Create a blank sheet
+        XSSFSheet sheet = workbook.createSheet("student Details");
+
+        // This data needs to be written (Object[])
+        Map<String, Object[]> data = new TreeMap<String, Object[]>();
+        data.put("1", new Object[]{ "exam name", "average" });
+        // TODO
+        for(int k = 0; k < tp.getExam_cnt(); k++){
+            Exam e = tp.getMyExams(k);
+            String name = e.getName();
+            double sum = 0;
+
+            for(int i = 0; i < e.getS_cnt(); i++){
+
+                String studentID = e.getStudents(i).getStudentID();
+                int nomre = 0;
+                for(int j = 0; j < e.getQ_cnt(); j++){
+
+                    StudentPanel sp = DataSaver.findSP_byID(studentID);
+                    int exam_number = sp.findExam(e);
+                    if(sp.getMyAnswer(exam_number,j) == null){
+                        continue;
+                    }
+                    int p = sp.getMyAnswer(exam_number,j).getPoints();
+                    nomre += (p == -1 ? 0 : p);
+                }
+                sum += nomre;
+            }
+            sum = sum/e.getS_cnt();
+            data.put(k+2+"", new Object[]{ name, sum+""});
+        }
+
+
+        // Iterate over data and write to sheet
+        Set<String> keyset = data.keySet();
+        int rownum = 0;
+        for (String key : keyset) {
+            // this creates a new row in the sheet
+            Row row = sheet.createRow(rownum++);
+            Object[] objArr = data.get(key);
+            int cellnum = 0;
+            for (Object obj : objArr) {
+                // this line creates a cell in the next column of that row
+                Cell cell = row.createCell(cellnum++);
+                if (obj instanceof String)
+                    cell.setCellValue((String)obj);
+                else if (obj instanceof Integer)
+                    cell.setCellValue((Integer)obj);
+            }
+        }
+        try {
+            // this Writes the workbook gfgcontribute
+            String ln = tp.getTeacher().getLast_name();
+            FileOutputStream out = new FileOutputStream(new File(ln+"ExamAverage.xlsx"));
+            workbook.write(out);
+            out.close();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
