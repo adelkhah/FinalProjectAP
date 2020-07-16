@@ -188,7 +188,6 @@ public class ExamTeacher {
         // This data needs to be written (Object[])
         Map<String, Object[]> data = new TreeMap<String, Object[]>();
         data.put("1", new Object[]{ "StudentID", "nomre" });
-        // TODO
         for(int i = 0; i < exam.getS_cnt(); i++){
 
             String studentID = exam.getStudents(i).getStudentID();

@@ -268,7 +268,7 @@ public class TeacherPanelScreen {
         // This data needs to be written (Object[])
         Map<String, Object[]> data = new TreeMap<String, Object[]>();
         data.put("1", new Object[]{ "exam name", "average" });
-        // TODO
+
         for(int k = 0; k < tp.getExam_cnt(); k++){
             Exam e = tp.getMyExams(k);
             String name = e.getName();
