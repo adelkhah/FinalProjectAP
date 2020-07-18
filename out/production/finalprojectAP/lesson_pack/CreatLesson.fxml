@@ -7,16 +7,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson_pack.CreatLesson">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAF0E6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson_pack.CreatLesson">
    <children>
-      <Button layoutX="244.0" layoutY="297.0" mnemonicParsing="false" onAction="#add" text="let's add students" />
-      <Hyperlink layoutX="313.0" layoutY="232.0" onAction="#creat" text="put your video" />
+      <Button layoutX="244.0" layoutY="297.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #87CEFA;" text="let's add students" />
+      <Hyperlink layoutX="313.0" layoutY="232.0" onAction="#creat" text="put your video">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
       <Label layoutX="245.0" layoutY="108.0" text="lesson name">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
       <TextField fx:id="name" layoutX="225.0" layoutY="165.0" promptText="lesson name" />
-      <Hyperlink layoutX="185.0" layoutY="232.0" onAction="#see" text="see your video" />
+      <Hyperlink layoutX="185.0" layoutY="232.0" onAction="#see" text="see your video">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
    </children>
 </AnchorPane>

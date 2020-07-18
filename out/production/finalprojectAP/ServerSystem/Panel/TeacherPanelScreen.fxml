@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane accessibleRole="BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.Panel.TeacherPanelScreen">
+<AnchorPane accessibleRole="BUTTON" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFDAB9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.Panel.TeacherPanelScreen">
     <children>
-        <MenuButton layoutX="225.0" layoutY="209.0" mnemonicParsing="false" text="setting" textFill="#441dd3">
+        <MenuButton layoutX="225.0" layoutY="209.0" mnemonicParsing="false" style="-fx-background-color: #BC8F8F;" text="setting" textFill="#281181">
             <items>
                 <MenuItem mnemonicParsing="false" onAction="#creat_exam" text="creat Exam" />
                 <MenuItem mnemonicParsing="false" onAction="#creat_lesson" text="creat lesson" />
@@ -26,7 +26,7 @@
             </font>
         </Label>
         <Label fx:id="first_name" layoutX="21.0" layoutY="60.0" text="first name : ali" />
-        <Label layoutX="42.0" layoutY="12.0" text="user profile" textFill="#bf1ea2">
+        <Label layoutX="21.0" layoutY="14.0" text="user profile" textFill="#bf1ea2">
          <font>
             <Font size="26.0" />
          </font></Label>
@@ -35,34 +35,40 @@
         <Label fx:id="group" layoutX="195.0" layoutY="41.0" text="groupChats : 21" />
         <Label fx:id="pvchat" layoutX="196.0" layoutY="77.0" text="PVchats : 4" />
         <Label fx:id="exam" layoutX="196.0" layoutY="111.0" text="Exams : 123414" />
-      <Button fx:id="button" layoutX="25.0" layoutY="209.0" mnemonicParsing="false" onAction="#exit" text="Exit" textFill="#c41919" />
-      <MenuButton fx:id="MBexam" layoutX="369.0" layoutY="37.0" mnemonicParsing="false" text="Exams" textFill="#4c15cd">
+      <Button fx:id="button" layoutX="25.0" layoutY="209.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: #FA8072;" text="Exit" textFill="#c41919" />
+      <MenuButton fx:id="MBexam" layoutX="369.0" layoutY="37.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Exams" textFill="#4c15cd">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </MenuButton>
-      <MenuButton fx:id="MBgroupchat" layoutX="465.0" layoutY="208.0" mnemonicParsing="false" text="Group chats" textFill="#3a19cd">
+      <MenuButton fx:id="MBgroupchat" layoutX="465.0" layoutY="208.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Group chats" textFill="#3a19cd">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </MenuButton>
-      <MenuButton fx:id="MBpvchat" layoutX="358.0" layoutY="208.0" mnemonicParsing="false" text="PV chats" textFill="#371bc1">
+      <MenuButton fx:id="MBpvchat" layoutX="358.0" layoutY="208.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="PV chats" textFill="#371bc1">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </MenuButton>
-      <MenuButton fx:id="MBlesson" layoutX="479.0" layoutY="37.0" mnemonicParsing="false" text="Lesson" textFill="#5518cf">
+      <MenuButton fx:id="MBlesson" layoutX="479.0" layoutY="37.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Lesson" textFill="#5518cf">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </MenuButton>
-      <Button layoutX="95.0" layoutY="209.0" mnemonicParsing="false" onAction="#refresh" text="refresh and save" textFill="#19cd13" />
+      <Button layoutX="95.0" layoutY="209.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #00FF7F;" text="refresh and save" textFill="#115b0e" />
       <Label fx:id="lesson" layoutX="195.0" layoutY="147.0" text="Lessons : " />
-      <Hyperlink layoutX="264.0" layoutY="176.0" onAction="#exam_chart" text="see your exam charts" />
-      <Hyperlink layoutX="428.0" layoutY="176.0" onAction="#exam_xlsx" text="create exam xlsx" />
+      <Hyperlink layoutX="264.0" layoutY="176.0" onAction="#exam_chart" text="see your exam charts">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink layoutX="428.0" layoutY="176.0" onAction="#exam_xlsx" text="create exam xlsx">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
     </children>
 </AnchorPane>

@@ -10,23 +10,26 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat_pack.PVshow">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #800080;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat_pack.PVshow">
    <children>
-      <Button layoutX="395.0" layoutY="298.0" mnemonicParsing="false" onAction="#send" text="send" textFill="#22ca30" />
+      <Button layoutX="395.0" layoutY="298.0" mnemonicParsing="false" onAction="#send" style="-fx-background-color: #00CED1;" text="send" textFill="#16711c" />
       <TextArea fx:id="textArea" layoutX="174.0" layoutY="298.0" prefHeight="87.0" prefWidth="221.0" promptText="type your message" />
-      <Label fx:id="label" layoutX="31.0" layoutY="54.0" prefHeight="25.0" prefWidth="97.0" text="felan PV" textFill="#5137d6" />
-      <Line endX="258.33331298828125" endY="4.166656494140625" layoutX="331.0" layoutY="289.0" startX="-179.1666717529297" startY="4.166656494140625" />
-      <Line endX="-12.666671752929688" endY="-43.333343505859375" layoutX="164.0" layoutY="336.0" startX="-12.666671752929688" startY="-327.3333435058594" />
-      <Button layoutX="395.0" layoutY="360.0" mnemonicParsing="false" onAction="#delete" text="delete" textFill="#c82826" />
-      <Button layoutX="395.0" layoutY="329.0" mnemonicParsing="false" onAction="#edit" text="edit" textFill="#2c44cd" />
+      <Label fx:id="label" layoutX="31.0" layoutY="54.0" prefHeight="25.0" prefWidth="97.0" text="felan PV" textFill="#93d5e5">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Line endX="258.33331298828125" endY="4.166656494140625" layoutX="331.0" layoutY="289.0" startX="-179.1666717529297" startY="4.166656494140625" stroke="#27da36" />
+      <Line endX="-12.666671752929688" endY="-43.333343505859375" layoutX="164.0" layoutY="336.0" startX="-12.666671752929688" startY="-327.3333435058594" stroke="#3fc858" />
+      <Button layoutX="395.0" layoutY="360.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #00CED1;" text="delete" textFill="#c82826" />
+      <Button layoutX="395.0" layoutY="329.0" mnemonicParsing="false" onAction="#edit" style="-fx-background-color: #00CED1;" text="edit" textFill="#2c44cd" />
       <TextField fx:id="textField" layoutX="461.0" layoutY="329.0" prefHeight="25.0" prefWidth="84.0" promptText="number" />
       <ScrollPane layoutX="163.0" layoutY="21.0" prefHeight="239.0" prefWidth="379.0">
          <content>
-            <TextFlow fx:id="textFlow" prefHeight="223.0" prefWidth="358.0" />
+            <TextFlow fx:id="textFlow" prefHeight="223.0" prefWidth="358.0" style="-fx-background-color: #FFEFD5;" />
          </content>
       </ScrollPane>
-      <Button layoutX="49.0" layoutY="329.0" mnemonicParsing="false" onAction="#refresh" text="refresh and save" textFill="#d61295" />
-      <Label layoutX="22.0" layoutY="21.0" text="chatting with" textFill="#1bb3d1">
+      <Button layoutX="49.0" layoutY="329.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #00FF7F;" text="refresh and save" textFill="#d61295" />
+      <Label layoutX="22.0" layoutY="21.0" text="chatting with" textFill="#17bbd8">
          <font>
             <Font size="20.0" />
          </font>

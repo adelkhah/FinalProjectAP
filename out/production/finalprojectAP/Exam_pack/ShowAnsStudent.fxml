@@ -9,21 +9,21 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.ShowAnsStudent">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BDB76B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Exam_pack.ShowAnsStudent">
    <children>
       <Label fx:id="solution" layoutX="181.0" layoutY="160.0" text="Label">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label layoutX="490.0" layoutY="150.0" text="solution" textFill="#56d628">
+      <Label layoutX="490.0" layoutY="150.0" text="solution" textFill="#2b6a15">
          <font>
             <Font size="25.0" />
          </font></Label>
-      <Label fx:id="point" layoutX="133.0" layoutY="298.0" text="points for the solution" textFill="#3cc417">
+      <Label fx:id="point" layoutX="133.0" layoutY="298.0" text="points for the solution" textFill="#30811a">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <MenuButton fx:id="menuButton" layoutX="22.0" layoutY="27.0" mnemonicParsing="false" text="Answers">
+      <MenuButton fx:id="menuButton" layoutX="22.0" layoutY="27.0" mnemonicParsing="false" style="-fx-background-color: #FF00FF;" text="Answers">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -44,7 +44,7 @@
          </font>
       </Label>
       <Line endX="100.0" layoutX="485.0" layoutY="149.0" startX="-344.33331298828125" startY="1.52587890625E-5" />
-      <Button layoutX="321.0" layoutY="347.0" mnemonicParsing="false" onAction="#see_chart" text="see charts for this exam" />
-      <Button layoutX="140.0" layoutY="347.0" mnemonicParsing="false" onAction="#exam_xlsx" text="create xlsx of the exam" />
+      <Button layoutX="321.0" layoutY="347.0" mnemonicParsing="false" onAction="#see_chart" style="-fx-background-color: #ADFF2F;" text="see charts for this exam" />
+      <Button layoutX="140.0" layoutY="347.0" mnemonicParsing="false" onAction="#exam_xlsx" style="-fx-background-color: #ADFF2F;" text="create xlsx of the exam" />
    </children>
 </AnchorPane>

@@ -7,15 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.Panel.ExamCreator">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFEFD5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerSystem.Panel.ExamCreator">
    <children>
-      <Button fx:id="creat" layoutX="267.0" layoutY="349.0" mnemonicParsing="false" onAction="#creat_exam" text="Creat Exam" textFill="#31c831" />
+      <Button fx:id="creat" layoutX="257.0" layoutY="349.0" mnemonicParsing="false" onAction="#creat_exam" style="-fx-background-color: #B0E0E6;" text="Creat Exam" textFill="#1b7a1b" />
       <TextField fx:id="sy" layoutX="155.0" layoutY="224.0" prefHeight="25.0" prefWidth="66.0" promptText="year" />
       <TextField fx:id="exam_name" layoutX="193.0" layoutY="104.0" promptText="Exam name" />
       <TextField fx:id="fy" layoutX="155.0" layoutY="293.0" prefHeight="25.0" prefWidth="66.0" promptText="year" />
       <TextField fx:id="time" layoutX="193.0" layoutY="136.0" promptText="Exam time in mintute" />
-      <Label layoutX="80.0" layoutY="228.0" text="start date : " />
-      <Label layoutX="80.0" layoutY="297.0" text="finish date : " />
+      <Label layoutX="80.0" layoutY="228.0" text="start date : ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="296.0" text="finish date : ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
       <TextField fx:id="sm" layoutX="229.0" layoutY="224.0" prefHeight="25.0" prefWidth="66.0" promptText="month" />
       <TextField fx:id="fm" layoutX="229.0" layoutY="293.0" prefHeight="25.0" prefWidth="66.0" promptText="month" />
       <TextField fx:id="sd" layoutX="305.0" layoutY="224.0" prefHeight="25.0" prefWidth="66.0" promptText="day" />
@@ -24,15 +30,24 @@
       <TextField fx:id="fh" layoutX="385.0" layoutY="293.0" prefHeight="25.0" prefWidth="66.0" promptText="hour" />
       <TextField fx:id="smin" layoutX="461.0" layoutY="224.0" prefHeight="25.0" prefWidth="66.0" promptText="minute" />
       <TextField fx:id="fmin" layoutX="461.0" layoutY="293.0" prefHeight="25.0" prefWidth="66.0" promptText="minute" />
-      <Label layoutX="184.0" layoutY="29.0" text="Creating Exam" textFill="#d323b9">
+      <Label layoutX="184.0" layoutY="29.0" text="Creating Exam" textFill="#991788">
          <font>
             <Font size="35.0" />
          </font>
       </Label>
-      <CheckBox fx:id="singleRand" layoutX="23.0" layoutY="131.0" mnemonicParsing="false" onAction="#singleANDrandom" text="single and random qestion" />
+      <CheckBox fx:id="singleRand" layoutX="14.0" layoutY="126.0" mnemonicParsing="false" onAction="#singleANDrandom" text="single and random qestion" />
       <TextField fx:id="numberOfexam" layoutX="193.0" layoutY="175.0" promptText="number of participate" />
-      <Label layoutX="359.0" layoutY="108.0" text="name of the exam" />
-      <Label layoutX="371.0" layoutY="140.0" text="exam time " />
-      <Label layoutX="351.0" layoutY="179.0" text="tedad dafate mojaze sherkat dar azmmon" />
+      <Label layoutX="359.0" layoutY="108.0" text="name of the exam">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="371.0" layoutY="140.0" text="exam time ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="351.0" layoutY="179.0" text="tedad dafate mojaze sherkat dar azmmon">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
    </children>
 </AnchorPane>
