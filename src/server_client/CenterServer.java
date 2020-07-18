@@ -15,7 +15,7 @@ public class CenterServer extends Application {
     @Override
     public void start(Stage stage) throws Exception
     {
-        Updater.reload();
+        //Updater.reload();
         ServerSocket serverSocket = new ServerSocket(PORT);
         System.out.println("Server is ready");
         for (int i = 0; i < ConnectingClient.CLIENT_NUMBER; i++){
