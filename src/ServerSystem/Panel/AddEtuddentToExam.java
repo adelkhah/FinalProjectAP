@@ -20,7 +20,6 @@ public class AddEtuddentToExam {
     public Exam exam;
     public TextField ID;
     public Label succ;
-
     public void start(Exam e){
         exam = e;
     }
@@ -41,7 +40,6 @@ public class AddEtuddentToExam {
         }
     }
     public void add_by_excel() throws Exception {
-
         FileChooser fileChooser = new FileChooser();
         File file = fileChooser.showOpenDialog(new Stage());   //creating a new file instance
         FileInputStream fis = new FileInputStream(file);   //obtaining bytes from the file

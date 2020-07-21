@@ -23,6 +23,7 @@ public class GroupChatShow {
     public TextArea message;
     public TextField number;
     public Label title;
+
     public void start(GroupChat groupChat){
         gp = groupChat;
         Person[] a = gp.getMembers();

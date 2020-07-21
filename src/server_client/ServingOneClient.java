@@ -7,9 +7,11 @@ import java.net.Socket;
 
 public class ServingOneClient extends Thread{
     private Socket socket;
+
     public ServingOneClient(Socket socket){
         this.socket = socket;
     }
+
     @Override
     public void run() {
         Platform.runLater(() -> {
